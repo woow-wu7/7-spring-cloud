@@ -6,6 +6,11 @@
     <modules>
         <module>eurekaServer</module>
         <module>eurekaClient</module>
+        <module>restTemplate</module>
+        <module>eurekaConsumer</module>
+        <module>zuul</module>
+        <module>ribbon</module>
+        <module>eurekaClient2</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -48,6 +53,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-commons</artifactId>
             <version>2.2.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>

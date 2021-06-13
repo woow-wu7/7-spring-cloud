@@ -1,0 +1,20 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true # 是否将当前服务的 ip 注册到 Eureka Server
+zuul:
+  routes:
+    provider: /p/** # 给服务提供者 provider 设置映射
+  host:
+    connect-timeout-millis: 800000
+    socket-timeout-millis: 800000
+  max:
+    host:
+      connections: 10000

@@ -1,0 +1,6 @@
+package com.example.eurekaClient.entity;
+
+public class User {
+    private String name;
+    private String age;
+}
